@@ -1,2 +1,2 @@
 # Bonfire.js
-Bonfire is a powerful, yet easy to use, JavaScript data structure for working with FireBase
+Bonfire is a powerful and easy to use JavaScript data structure for working with Firebase
