@@ -1,0 +1,23 @@
+{
+  "name": "bonfire.js",
+  "version": "0.0.1",
+  "description": "Bonfire is a powerful and easy to use JavaScript data structure for working with Firebase",
+  "main": "index.js",
+  "dependencies": {
+    "deep-diff": "^0.3.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "ava test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonfire-js/bonfire.js.git"
+  },
+  "author": "Baran Skistad & David Nagli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bonfire-js/bonfire.js/issues"
+  },
+  "homepage": "https://github.com/bonfire-js/bonfire.js#readme"
+}
