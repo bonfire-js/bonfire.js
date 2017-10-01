@@ -64,6 +64,9 @@ let [makeBonfire] = (() => {
 
                         firebaseRef.on("value", _firebaseOnValueHandler);
 
+                        let a = new _NodeLocation();
+                        a.addDepth("foo").addDepth("bar");
+
                         resolve(bonfire)
                     } else {
                         reject(`Bonfire.js expects the Firebase node to be a non-leaf node (in other words, it should have children). Otherwise the bonfire is useless since there are no children to track!`)
@@ -224,7 +227,11 @@ let [makeBonfire] = (() => {
          * @param {String} key - the key of the child node depth you with to add
          */
         addDepth(key) {
-            this.locationArray.push(key)
+            this.locationArray.push(key);
+
+            let chainObj = {};
+            chainObj.addDepth = this.addDepth.bind(this);
+            return chainObj //allows chaining addDepth calls
         }
 
         /**
