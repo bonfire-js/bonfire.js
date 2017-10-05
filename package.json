@@ -6,7 +6,9 @@
   "dependencies": {
     "deep-diff": "^0.3.8"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "ava": "^0.20.0"
+  },
   "scripts": {
     "test": "ava test"
   },
