@@ -10,7 +10,7 @@
     "ava": "^0.20.0"
   },
   "scripts": {
-    "test": "ava test"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
